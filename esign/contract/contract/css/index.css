@@ -1,0 +1,167 @@
+<style>
+i.icon.icon-next {
+    background-image: url('../triangle-next.png')
+  }
+
+  i.icon.icon-prev {
+    background-image: url('../triangle-pre.png')
+  }
+
+  .picker-calendar-day.picker-calendar-day-selected span {
+    background-color: #EE4F4F;
+  }
+
+  .flexBox {
+    display: flex;
+    margin-bottom: 10px;
+    overflow: hidden;
+  }
+  .inputBox{
+    flex:1 1 auto;
+  }
+  p {
+    margin: 0;
+    margin-bottom: 1rem;
+    padding: 0;
+  }
+
+  .myinput {
+    border: 0px;
+    width: 100%; 
+    font-size: 16px;
+  }
+
+  .signinput {
+    border: 0px;
+    width: 40vw;
+    font-size: 16px;
+  }
+
+  .ful-input {
+    font-size: 16px;
+    border: 0px;
+    width: 100%;
+  }
+
+  .center {
+    text-align: center;
+  }
+
+  .title {
+    font-size: 16px;
+    flex-shrink: 0;
+
+  }
+
+  .bolid {
+    font-weight: 600;
+  }
+
+  .line {
+    width: 100%;
+    height: 1px;
+    background-color: #111;
+  }
+
+  .signBox {
+    display: flex;
+  }
+
+  .signCellL {
+    /* float: left; */
+    width: 48vw;
+  }
+
+  .signCellR {
+    /* float: right; */
+    width: 48vw;
+  }
+
+  .signText {
+    margin-left: 10px;
+    color: #aaa5a5;
+    padding-bottom: 42.4px;
+  }
+
+  .signInputBox {
+    width: 40vw;
+  }
+
+  .signCellRName {
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+
+  .none {
+    display: none;
+  }
+
+  .detailSmall {
+    color: #1679D4;
+    font-size: 13px;
+  }
+
+  #content {
+    width: 94vw;
+    margin: 0 auto 14vw auto;
+  }
+
+  .submitBox {
+    background-color: #fff;
+    display: flex;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 14vw;
+    border-top: 1px solid #e0dddd;
+  }
+
+  .explainBox {
+    width: 70vw;
+    height: 14vw;
+    color: #aaa5a5;
+  }
+
+  .explainText {
+    line-height: 14vw;
+    font-size: 14px;
+    padding-left: 2vw;
+  }
+
+  .submitBtn {
+    width: 30vw;
+    font-size: 15px;
+    line-height: 14vw;
+    height: 14vw;
+    text-align: center;
+    background-color: #EE4F4F;
+    color: #fff;
+  }
+
+  @-webkit-keyframes flash {
+    0% {
+      background-color: #fff;
+      opacity: 1;
+    }
+    25% {
+      background-color: #fa9292;
+    }
+    50% {
+      background-color: #fff;
+    }
+    75% {
+      background-color: #fa9292;
+    }
+    100% {
+      background-color: #fff;
+    }
+  }
+
+  .flash {
+    -webkit-animation-name: flash;
+    -webkit-animation-duration: 2000ms;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-in-out;
+  }
+</style>

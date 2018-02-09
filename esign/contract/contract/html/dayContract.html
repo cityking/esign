@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/weui/1.1.2/style/weui.min.css">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/jquery-weui/1.2.0/css/jquery-weui.min.css">
+    <script type="text/javascript" src="../jquery-3.2.1.min.js">
+    </script>
+    <script src="../scrollToself.js"></script>         
+    <title>产品日日红三方投资理财合同</title>
+    <link rel="stylesheet" href="../css/dayContract.css">        
+</head>
+
+
+<body style="font-size: 14px !important;">
+    <div id="content">
+        <h3 class="center" style="margin-bottom:20px;">产品日日红三方投资理财合同</h3>
+        <div class="flexBox bolid">
+            <div class="title ">投资方（甲方）：</div>
+            <div class="inputBox">
+                <input id="first_party" type="text" name="username" value="" class="myinput bolid">
+                <div class="line"></div>
+            </div>
+        </div>
+        <div class="flexBox bolid">
+            <div class="title">身份证号码：</div>
+            <div class="inputBox">
+                <input id="idNum" type="text" name="username" value="" class="myinput">
+                <div class="line"></div>
+                <!-- 单独加线是因为input自身的border-bottom没有对齐 -->
+            </div>
+        </div>
+        <div class="flexBox bolid">
+            <div class="title">联系电话：</div>
+            <div class="inputBox">
+                <input id="phone" type="text" name="username" value="" class="myinput">
+                <div class="line"></div>
+            </div>
+        </div>
+        <div class="flexBox bolid">
+            <div class="title">联系地址：</div>
+            <div class="inputBox">
+                <input id="address" type="text" name="username" value="" class="myinput">
+                <div class="line"></div>
+            </div>
+        </div>
+        <div class="title">融资方（乙方）：北京美氏高食品科技股份有限公司</div>
+        <div class="title">营业执照号：911101146669214989</div>
+        <div class="title">法定代表人：蒋群</div>
+        <div class="title">地址：北京市昌平区小汤山镇小汤山现代农业科技示范园</div>
+        <div class="title">联系电话：010-51626453</div>
+        <div class="title">投资管理方（丙方）：全球联（北京）实业发展有限公司</div>
+        <div class="title">营业执照号：91110105MA0097W41D</div>
+        <div class="title">法定代表人：蒋群</div>
+        <div class="title">地址：北京市丰台区航丰路1号院3号楼3至17层301内4层401</div>
+        <div class="title">联系电话：010-53572567</div>
+        <div class="title">根据国家有关法律、法规的规定，甲、乙、丙三方本着诚实守信的原则，在平等自愿的基础上商定，由甲方提供甲、乙双方商定的投资金额给乙方，丙方为乙方提供连带保证责任。为明确三方的法律责任，保障三方的合法权益，特订立本合同：</div>
+        <!-- <h4 class="title center" id="detail">具体产品条款</h4> -->
+        <div id="detailContent">
+            <div class="title ">第一条 理财产品详情</div>
+            <p class="bolid">1.产品名称：日日红</p>
+            <p class="bolid">2.投入限制：5万元/份</p>
+            <p class="bolid">3.年化率： 8%</p>
+            <p class="bolid">4.投资期限：365天</p>
+            <p class="bolid">5.返还形式：本息同返</p>
+            <p class="bolid">6.返还周期：日返</p>
+            <div class="title">第二条 投资份数及对应投资金额</div>
+            <span class="bolid">投资份数：</span>
+            <span style="width:6rem; display:inline-block;" class="bolid">
+                <input id="inputNum" type="number" name="username" value="" class="myinput" style="text-align:center;width:6rem; " placeholder="请输入数字">
+                <div class="line"></div>
+            </span>
+            <span class="bolid">份；</span>
+            <div>
+                <span class="bolid">投资金额人民币：</span>
+                <span style="width:30vw; display:inline-block;" class="bolid">
+                    <input id="priceCn" type="text" name="username" value="" class="myinput" style="text-align:center;width:30vw; ">
+                    <div class="line"></div>
+                </span>
+                <span class="bolid">万元整</span>
+                <span class="bolid">（大写）</span>
+                <div>
+                    <span style="visibility:hidden">投资金额人民币：</span>
+                    <div style="display:inline-block; position:relative">
+                        <span class="rmb bolid">￥</span>
+                        <span style="width:30vw; display:inline-block;" class="bolid">
+                            <input id="price" type="text" name="username" value="" class="myinput" style="text-align:center;width:30vw; ">
+                            <div class="line"></div>
+                        </span>
+                        <span class="bolid">元</span>
+                    </div>
+                </div>
+            </div>
+            <div class="title bolid">第三条 投资期限 365天。</div>
+            <div class="flexBox">
+                <div class="title bolid">第四条 起投日期：</div>
+                <div class="inputBox bolid">
+                    <input id="startTime" type="text" name="username" value="" class="myinput center">
+                    <div class="line"></div>
+                </div>
+            </div>
+            <div class="title bolid">第五条 投资收益  年化率8%</div>
+            <div class="title ">第六条 投资用途</div>
+            <p>乙方郑重承诺：乙方投资用途合法，乙方严格按照合同约定的用途使用投资资金。乙方投资用途：用于北京美氏高食品科技股份有限公司产品研发，扩大再生产，提高利润。</p>
+            <div class="title ">第七条 甲方投资理财产品的支付方式 </div>
+            <p>甲方应于本合同生效后当日内一次性向乙方交付全部投资资金。</p>
+            <div class="title">乙方收款户名：北京美氏高食品科技股份有限公司</div>
+            <div class="title">开户行：中国民生银行北京航天桥支行</div>
+            <div class="title">账号：0142 0128 3000 4620</div>
+            <!-- <div class="flexBox bolid">
+                <div class="title fs-14">乙方收款户名：</div>
+                <div class="inputBox">
+                    <input id="receiveName" type="text" name="username" value="" class="myinput bolid">
+                    <div class="line"></div>
+                </div>
+            </div>
+            <div class="flexBox bolid">
+                <div class="title fs-14">开户行：</div>
+                <div class="inputBox">
+                    <input id="cardBank" type="text" name="username" value="" class="myinput bolid">
+                    <div class="line"></div>
+                </div>
+            </div>
+            <div class="flexBox bolid">
+                <div class="title fs-14">账号：</div>
+                <div class="inputBox">
+                    <input id="accountNumber" type="text" name="username" value="" class="myinput bolid">
+                    <div class="line"></div>
+                </div>
+            </div> -->
+            <div class="title bolid">第八条 乙方支付投资人投资本金与收益的方式</div>
+            <p>乙方支付投资人投资本金与收益的方式按以下方式执行：
+                <br>直接汇款至甲方指定账户；</p>
+
+            <div class="flexBox bolid">
+                <div class="title fs-14">开户人全称：</div>
+                <div class="inputBox">
+                    <input id="accountNameRec" type="text" name="username" value="" class="myinput bolid">
+                    <div class="line"></div>
+                </div>
+            </div>
+            <div class="flexBox bolid">
+                <div class="title fs-14">开户行：</div>
+                <div class="inputBox">
+                    <input id="accountBankRec" type="text" name="username" value="" class="myinput bolid">
+                    <div class="line"></div>
+                </div>
+            </div>
+            <div class="flexBox bolid">
+                <div class="title fs-14">账号：</div>
+                <div class="inputBox">
+                    <input id="accountNumberRec" type="text" name="username" value="" class="myinput bolid">
+                    <div class="line"></div>
+                </div>
+            </div>
+            <div class="title ">第九条  三日代偿 </div>
+            <p>丙方受乙方委托为本合同项下的投资提供连带管理责任，若到期乙方没有按时还款，丙方在投资到期后三日内无条件向甲方代偿。</p>
+            <div class="title ">第十条 甲方的权利和义务</div>
+            <p>1、对乙方提交的材料、文件的合法性、真实性进行审查。</p>
+            <p>2、本合同履行期间，发生下列情形之一时，甲方有权提前收回投资本金和权益或解除本合同</p>
+            <p>（1）乙方向甲方、丙方提供虚假证明材料的;</p>
+            <p>（2）乙方拒绝丙方对投资使用情况进行监督检查的；</p>
+            <p>（3）乙方负有数额较大的债务或卷入、即将卷入重大的法律纠纷或发生其他足以影响其偿还能力的重大事项的；</p>
+            <p>乙方因丧失民事行为能力、被宣告失踪、死亡而无继承 人、监护人、财产代管人、受遗赠人或乙方的继承人、监护人、财产代管人、受遗赠人拒绝为乙方履行偿还本金、款至甲方指定账户，甲方指定的账户为：
+            </p>
+            <div class="flexBox bolid">
+                <div class="fx-shrink">开户人全称：</div>
+                <div class="inputBox">
+                    <input id="accountNamePay" type="text" name="username" value="" class="myinput bolid">
+                    <div class="line"></div>
+                </div>
+            </div>
+            <div class="flexBox bolid">
+                <div class="fx-shrink">开户行：</div>
+                <div class="inputBox">
+                    <input id="accountBankPay" type="text" name="username" value="" class="myinput bolid">
+                    <div class="line"></div>
+                </div>
+            </div>
+            <div class="flexBox bolid">
+                <div class="fx-shrink">账号：</div>
+                <div class="inputBox">
+                    <input id="accountNumberPay" type="text" name="username" value="" class="myinput bolid">
+                    <div class="line"></div>
+                </div>
+            </div>
+            <p>第二种方式：直接支付现金给甲方。</p>
+            <div class="title ">第十一条 乙方的权利和义务</div>
+            <p>1、乙方应根据丙方要求提供相应的文件及资料，并保证资料的真实性和合法性。</p>
+            <p>2、乙方应依照合同约定按时、足额偿还投资本金和收益。 </p>
+            <p>3、乙方的注册地（或主要办事机构所在地或营业地或居住地）、联系方式、单位的变迁等发生变更时，乙方必须在变更前三日内书面通知甲方及丙方，因乙方未及时通知其公司变更情况给甲方和丙方造成的损失全部由乙方承担。</p>
+            <p>4、乙方应积极配合丙方对投资进行管理与风险监控。 </p>
+            <p>5、乙方同意若到期不履行还款义务造成丙方代偿的，甲方对乙方所拥有担保物权权利自动转移至丙方，担保范围为本合同第十三条规定的全部责任。 </p>
+            <p>6、甲方实际向乙方发放投资资金当日，乙方应实际向丙方缴纳投资金额5%的保证金。  </p>
+            <div class="title ">第十二条 丙方的权利和义务</div>
+            <p>丙方有权对乙方提交资料、文件的合法性、真实性进行审查、核实，有权对乙方的资信、资产状况及公司其他运营状况进行调查。  </p>
+            <p>丙方有权对乙方使用投资情况进行监督、管理、催收。 按照本合同约定承担连带保证责任。</p>
+            <p>根据甲方要求如办理股权质押，受甲方委托监管乙方日常资金使用等事项。</p>
+            <div class="title ">第十三条 违约责任</div>
+            <p>1、乙方未按照合同约定期限偿还本金、收益的，由丙方在投资到期后三日内无条件向甲方代偿。</p>
+            <p>2、如乙方未按期、足额向甲方履行还款义务，自逾期之日起乙方每日按投资金额所欠收益总金额（包括滞纳金）的万分之五向丙方支付违约金。</p>
+            <p>3、如乙方拒不履行还款义务或无力清偿欠款导致丙方采取相关措施，乙方应向丙方支付为实现债权而支出的诉讼费、拍卖费、律师费、差旅费、人员工资等全部费用。</p>
+            <p>4、在投资期间，若乙方预留在丙方处的联系方式、实际居住地（主营业务地或注册地）、工作单位等发生变化导致无法与乙方取得联系或乙方未按时、足额还款，最终导致丙方进行催收的，上述行为每发生一次，乙方应另向丙方支付违约金1000元。</p>
+            <p>5、从投资到期之日起十日内，乙方未能按投资合同约定足额还款，丙方有权在不通知甲方的情况下通过新闻媒体和网络等渠道公布乙方具体违约行为等信息。 </p>
+            <p>6、乙方有上诉任一违约行为时，丙方有权直接从乙方所交纳的保证金中扣除相应违约金，当保证金余额不足以支付当前违约金时，丙方有权向乙方追索。</p>
+            <p>7、投资合同签订后，若甲方不按时、足额将投资资金交付给乙方，甲方应承担投资金额百分之五的违约责任。</p>
+            <div class="title ">第十四条 甲方提前终止合同</div>
+            <p>甲方在合同未到期抽回投资资金时，需提前一周书面通知乙方和丙方，经乙方和丙方同意(经了解急需用款情况属实的），未满六个月的，不可提前终止合同；满六个月但未满足合同规定期限的，按理财产品“饭宝”的相关理财收益标准执行。</p>
+            <div class="title ">第十五条 乙方提前终止合同</div>
+            <p>乙方可以提前偿还投资资金，除按照实际用款月数支付收益（不足一个月的部分按一个月计算）外，还应当向丙方另行支付一个月投资收益来弥补丙方由此所遭受的损失。</p>
+            <div class="title ">第十六条 协议补充</div>
+            <p>本合同未尽事宜，由甲、乙、丙三方协议补充，补充协议与本协议具有同等法律效力。 </p>
+            <div class="title ">第十七条 争议解决方式</div>
+            <p>如因本合同发生纠纷，三方应友好协商解决，协商不成立时，由丙方所在地法院管辖，乙方自愿接受法院的强制执行。 </p>
+            <div class="title ">第十八条 合同文本份数 </div>
+            <p>本合同一式六份，甲、乙、丙三方各执两份。 </p>
+            <div class="title ">第十九条 合同生效要件</div>
+            <p>1、乙方收到甲方投资款项</p>
+            <p style="margin-bottom: 40px;">2、本合同自甲、乙、丙三方签字盖章之日起生效。</p>
+            <div class="flexBox bolid">
+                <div class="title ">投资方（甲方）：</div>
+                <div class="inputBox">
+                    <input id="first_party_again" type="text" name="username" value="" class="myinput bolid">
+                    <div class="line"></div>
+                </div>
+            </div>
+            <div class="title" style="margin-bottom:130px;">法定代表人或委托代理人（签字）:</div>
+            <div class="title">融资方（乙方）：北京美氏高食品科技股份有限公司</div>
+            <div class="title">投资管理方（丙方）：全球联（北京）实业发展有限公司</div>
+            <div class="flexBox bolid">
+                <div class="title ">合同签订日期：</div>
+                <div class="inputBox">
+                    <input id="assginTime" type="text" name="username" value="" class="myinput center">
+                    <div class="line"></div>
+                </div>
+            </div>
+        </div>
+        <div class="submitBox">
+            <div class="explainBox">
+                <span class="explainText">下一步完善文档相关信息</span>
+            </div>
+            <div class="submitBtn" id="submit">下一步</div>
+        </div>
+        <script src="https://cdn.bootcss.com/jquery-weui/1.2.0/js/jquery-weui.min.js"></script>
+        <script type="text/javascript">
+            $(function () {
+                var first_party = $('#first_party')
+                var idNum = $('#idNum')
+                var address = $('#address')
+                var phone = $('#phone')
+                var inputNum = $('#inputNum')
+                var priceCn = $('#priceCn')
+                var price = $('#price')
+                var startTime = $('#startTime')
+                var accountNameRec = $('#accountNameRec')
+                var accountNumberRec = $('#accountNumberRec')
+                var accountBankRec = $('#accountBankRec')
+                var accountNamePay = $('#accountNamePay')
+                var accountBankPay = $('#accountBankPay')
+                var accountNumberPay = $('#accountNumberPay')
+                var first_party_again = $('#first_party_again')
+                var assginTime = $('#assginTime')
+
+                $("#startTime").calendar()
+                $("#assginTime").calendar()
+                $.toast.prototype.defaults.duration = 1500
+
+                $('#submit').on('click', function () {
+                    // 获得各个input的值
+                    var params = {}
+                    params.first_party = first_party.val()
+                    params.ID_card = idNum.val()
+                    params.address = address.val()
+                    params.phone = phone.val()
+                    params.copies = inputNum.val()
+                    params.money_upper = priceCn.val()
+                    params.money = price.val()
+                    params.start_date = startTime.val()
+                    params.account_holder8 = accountNameRec.val()
+                    params.account_bank8 = accountBankRec.val()
+                    params.account8 = accountNumberRec.val()
+                    params.account_holder10 = accountNamePay.val()
+                    params.account_bank10 = accountBankPay.val()
+                    params.account10 = accountNumberPay.val()
+                    params.first_party_again1 = first_party_again.val()
+                    params.create_date = assginTime.val()
+
+                    if (params.first_party == '') {
+                        error("请填写甲方姓名", first_party)
+                        return
+                    }
+                    if (params.ID_card == '') {
+                        error("请填写身份证号码", idNum)
+                        return
+                    }
+                    if (params.phone == '') {
+                        error("请填写联系电话", phone)
+                        return
+                    }
+                    if (params.address == '') {
+                        error("请填写联系地址", address)
+                        return
+                    }
+                    if (params.copies == '') {
+                        error("请填写投资份数", inputNum)
+                        return
+                    }
+                    if (params.money_upper == '') {
+                        error("请填写投资人民币（大写）", priceCn)
+                        return
+                    }
+                    if (params.money == '') {
+                        error("请填写投资人民币（数字）", price)
+                        return
+                    }
+                    if (params.start_date == '') {
+                        error("请填写起投日期", startTime)
+                        return
+                    }
+                    if (params.account_holder8 == '') {
+                        error("请填写开户人全称", accountNameRec)
+                        return
+                    }
+                    if (params.account_bank8 == '') {
+                        error("请填写开户行", accountBankRec)
+                        return
+                    }
+                    if (params.account8 == '') {
+                        error("请填写账号", accountNumberRec)
+                        return
+                    }
+                    if (params.account_holder10 == '') {
+                        error("请填写开户人全称", accountNamePay)
+                        return
+                    }
+                    if (params.account_bank10 == '') {
+                        error("请填写开户行", accountBankPay)
+                        return
+                    }
+                    if (params.account10 == '') {
+                        error("请填写账号", accountNumberPay)
+                        return
+                    }
+                    if (params.first_party_again1 !== params.first_party) {
+                        error("甲方信息两次输入不一致", first_party_again)
+                        return
+                    }
+                    if (params.create_date == '') {
+                        error("请填写签署合同的时间", assginTime)
+                        return
+                    }
+                    var paramsTosend = JSON.stringify(params)
+                    androidjs.getContentJson(paramsTosend)//调安卓方法，传一个json过去
+                })
+                var error = function (errorText, dom) {
+                    $.toast(errorText, "text")
+                    var offset = dom.offset()
+                    scrollTo(dom, 1500)
+                    dom.addClass('flash')
+                    setTimeout(function () {
+                        dom.removeClass('flash');
+                    }, 1500);
+                }
+            })
+        </script>
+</body>
+
+</html>
